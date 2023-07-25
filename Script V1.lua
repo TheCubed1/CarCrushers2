@@ -1,3 +1,8 @@
+-- anti-afk
+for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
+   v:Disable()
+end
+
 -- services
 local players = game:GetService("Players")
 local vu = game:GetService("VirtualUser")
